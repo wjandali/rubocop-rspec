@@ -23,7 +23,10 @@ module ExpectViolation
   def expect_no_violations(source, filename: DEFAULT_FILENAME)
     inspect_source(cop, source, filename)
 
-    expect(cop.offenses.empty?).to be(true)
+    expect(cop.offenses.empty?).to(
+      be(true),
+      "Expected no violations but found: #{cop.offenses.map(&:to_s)}"
+    )
   end
 
   private

@@ -6,6 +6,7 @@
 * Fix `DescribeClass` to not flag `describe` at the top of a block of shared examples. ([@clupprich][])
 * Add `SingleArgumentMessageChain` cop for recommending use of `receive` instead of `receive_message_chain` where possible. ([@bquorning][])
 * Add `RepeatedDescription` cop for detecting repeated example descriptions within example groups. ([@backus][])
+* Add `RepeatedExample` cop for detecting repeated examples within example groups. ([@backus][])
 
 ## 1.8.0 (2016-10-27)
 
